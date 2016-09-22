@@ -1,0 +1,16 @@
+{
+    "name": "jlopezcur/media-manager",
+    "description": "Laravel 5 Package for manage resources and uploads in a Bootstrap way",
+    "require": {
+        "illuminate/support": "^5.2",
+        "bkwld/croppa": "^4.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Javier López Úbeda",
+            "email": "jlopecur@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

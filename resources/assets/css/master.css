@@ -1,0 +1,33 @@
+.sort-highlight {
+    background: lightyellow !important;
+    border: 2px dashed yellow !important;
+}
+
+.widget-user-header a {
+    color: white;
+}
+.widget-user-desc a {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+/* Servers */
+
+.server-bg-danger { background-color: #d33724; }
+.server-bg-warning { background-color: #f39c12; }
+.server-bg-success { background-color: #00a65a; }
+.server-text-danger { color: #d33724; }
+.server-text-warning { color: #f39c12; }
+.server-text-success { color: #00a65a; }
+
+/* Helpers */
+.text-white { color: white; }
+
+
+/* Miletones */
+.info-box a { color:white; }
+
+
+/* Timeline */
+.timeline > li { margin-right: 0; }
+.timeline>li>.timeline-item { margin-right: 0; }

@@ -1,0 +1,28 @@
+@if(trim(strip_tags($issue->description)) != '')
+
+    <li>
+        <i class="fa" style="line-height:normal;">
+            <a href="{{ route('users.show', [$issue->author->id]) }}">
+                <img src="http://www.gravatar.com/avatar/{{ md5($issue->author->email) }}?s=30" class="img-rounded" style="vertical-align: text-top" alt="User Image">
+            </a>
+        </i>
+        <div class="timeline-item">
+            <span class="time">...</span>
+            <h3 class="timeline-header">
+                @if(isset($issue->author->id))
+                <a href="{{ route('users.show', [$issue->author->id]) }}">
+                    {{ $issue->author->full_name }}
+                </a>
+                @else
+                {!! trans('fields.none') !!}
+                @endif
+                commented
+                {{ $issue->created_at->diffForHumans() }}
+            </h3>
+            <div class="timeline-body markdown">
+                {!! Markdown::convertToHtml($issue->description) !!}
+            </div>
+        </div>
+    </li>
+
+@endif
